@@ -5,45 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="task">
-        <p id="heading">Welcome to the JavaScript playground, this is just recap of your lessons in LMS. So take your time and try to
-            osolve as many challenges asa you can, so lets start with firts one. Add functionality so user have option
+        <p>Welcome to the JavaScript playground, this is just recap of your lessons in LMS. So take your time and try to
+            solve as many challenges asa you can, so lets start with firts one.</p>
+            <p id="heading">Add functionality so user have option
             to switch to dark mode which will make the background of this text black, text color will be white and
-            bold!! Also add transition with delay of 2s. </p>
-            <button>Dark mode</button>
-            <button>Normal mode</button>
+            bold!! <strong>Also add transition with delay of 2s.</strong> </p>
+            <button onclick="setDarkMode()">Dark mode</button>
+            <button onclick="setLightMode()">Normal mode</button>
     </div>
     <div class="task1">
-        <h4>Create two functions called changeTypeEmail() and changeTypeNumber() that will update the type attribute on
-            the input field to match the type of login details the user selects, email or phone number!</h4>
-        <button>Email</button>
-        <button>Phone number</button>
-        <form>
-            <input id="login" type="text">
-            <button id="submit-btn" type="submit">Submit</button>
-        </form>
+        <p><strong>For this section you have couple tasks to perform for this form, work one task at the time</strong></p>
         <p>Add functionality, once data is submitted to change color of the button and for data not to be lost, so it will remain in the input field</p>
-        <p>Add functionality to save the data, so you can read input in the console asa well</p>
+        <p>Add functionality to save the data, so you can read input in the console as well</p>
+        <p>Write a function called showMessage() that is triggered when the form is submitted.<br>
+            The function should:<br>
+            Access the value entered by the user in the input field for their gamertag.<br>
+            Access the paragraph element using its ID of Message.<br>
+            Insert text into the paragraph element that says "Great work" and adds users gamer tag to the end of the message.<br>
+            Remember to stop the web page from refreshing when the form is submitted.</p>
+        <h5>Username</h5>
+        <form class="input">
+            <input id="login" type="">
+            <button id="submit-btn" class="btn" type="submit">Submit</button>
+        </form>
+        
     </div>
     <div class="task2">
-        <h4>Add functionality to the id="answer", and add onclick attribute to button so user can read following answer
+        <p>Add functionality to the id="answer", and add onclick attribute to button so user can read following answer
             :"JavaScript is a scripting or programming language that allows you to implement complex features on web
-            pages"</h4>
+            pages"</p>
         <p>What is JavaScript?</p>
-        <button> See answer</button>
-        <div id="answer"></div>
+        
+        <div id="answer">
+            <button onclick="showMore()"> See answer</button>
+        </div>
     </div>
     <div class="task3">
-        <h4>Build functionality to convert Sterling Pounds to Euro 1pound = 1.15eur</h4>
+        <p>Build functionality to convert Sterling Pounds to Euro 1pound = 1.15eur</p>
         <form onsubmit="">
-            <p>Enter ammount in pounds</p>
+            <p>Enter amount in pounds</p>
             <input type="number" name="">
             <button type="submit">Convert to euros</button>
         </form>
         <h2 id="result"></h2>
+    </div>
+    <div class="task4">
+        <p>Build functionality when the "Close" button is clicked, clear the page of all HTML and display the message “Thank you Marko"</p>
+       
+        <button id="close-btn">Close</button>
+            
     </div>
     <script src="script.js"></script>
 
