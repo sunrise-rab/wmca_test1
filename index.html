@@ -15,8 +15,8 @@
             <p id="heading">Add functionality so user have option
             to switch to dark mode which will make the background of this text black, text color will be white and
             bold!! <strong>Also add transition with delay of 2s.</strong> </p>
-            <button onclick="setDarkMode()">Dark mode</button>
-            <button onclick="setLightMode()">Normal mode</button>
+            <button class = "dark" onclick="setDarkMode()">Dark mode</button>
+            <button class = "light" onclick="setLightMode()">Normal mode</button>
     </div>
     <div class="task1">
         <p><strong>For this section you have couple tasks to perform for this form, work one task at the time</strong></p>
@@ -46,18 +46,26 @@
         </div>
     </div>
     <div class="task3">
-        <p>Build functionality to convert Sterling Pounds to Euro 1pound = 1.15eur</p>
+        <p>Build functionality to convert Sterling Pounds to Euro 1pound = 1.15eur. Make sure ti display the result in the h2 tag bellow.</p>
         <form id="conversion-form">
             <p>Enter amount in pounds</p>
-            <input type="number" name="pounds-amount" title="Please enter amount">
+            <input type="number" name="pounds-amount" id="pounds-amount" title="Please enter amount">
             <button type="submit">Submit</button>
         </form>
         <h2 id="result"></h2>
     </div>
     <div class="task4">
+        <p>Using javascript move blue box 100px to the right and 400px to the bottom to cover the red box</p>
+        <div id="box">
+            <div id="blue-box"></div>
+            <div id="red-box"></div>
+        </div>
+        
+    </div>
+    <div class="task5">
         <p>Build functionality when the "Close" button is clicked, clear the page of all HTML and display the message “Thank you Marko"</p>
        
-        <button id="close-btn">Close</button>
+        <button id="juhu">Close</button>
             
     </div>
     <script src="script.js"></script>
