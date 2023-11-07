@@ -20,17 +20,17 @@
     </div>
     <div class="task1">
         <p><strong>For this section you have couple tasks to perform for this form, work one task at the time</strong></p>
-        <p>Add functionality, once data is submitted to change color of the button and for data not to be lost, so it will remain in the input field</p>
-        <p>Add functionality to save the data, so you can read input in the console as well</p>
-        <p>Write a function called showMessage() that is triggered when the form is submitted.<br>
-            The function should:<br>
-            Access the value entered by the user in the input field for their gamertag.<br>
-            Access the paragraph element using its ID of Message.<br>
-            Insert text into the paragraph element that says "Great work" and adds users gamer tag to the end of the message.<br>
-            Remember to stop the web page from refreshing when the form is submitted.</p>
+    <p>Add functionality, once data is submitted to change color of the button and for data not to be lost, so it will remain in the input field</p>
+    <p>Add functionality to save the data, so you can read input in the console as well</p>
+    <p>Write a function called showMessage() that is triggered when the form is submitted.<br>
+        The function should:<br>
+        Access the value entered by the user in the input field.<br>
+        <br>
+        
+        Remember to stop the web page from refreshing when the form is submitted.</p>
         <h5>Username</h5>
-        <form class="input">
-            <input id="login" type="">
+        <form class="input" onsubmit="showMessage(event)">
+            <input id="login" type="text">
             <button id="submit-btn" class="btn" type="submit">Submit</button>
         </form>
         
@@ -56,10 +56,11 @@
     </div>
     <div class="task4">
         <p>Using javascript move blue box 100px to the right and 400px to the bottom to cover the red box</p>
-        <div id="box">
+        <div id="boxs">
             <div id="blue-box"></div>
             <div id="red-box"></div>
         </div>
+        <button onclick="move()">Move</button>
         
     </div>
     <div class="task5">

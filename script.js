@@ -10,6 +10,16 @@ function setLightMode() {
     body.style = "background-color: white; color: black;"
 }
 
+
+//task2
+function showMessage(event) {
+    event.preventDefault();
+    const data = document.getElementById('login').value;
+    const submitButton = document.getElementById('submit-btn');
+    submitButton.style.backgroundColor = 'green';
+
+    console.log("User's data is: " + data);
+}
 //task3
 function showMore() {
     let post = document.getElementById("answer");
@@ -18,7 +28,7 @@ function showMore() {
         `
 }
 
-//task 5
+//task 6
 const closeBtn = document.getElementById("juhu");
 closeBtn.addEventListener("click", function () {
     document.body.innerHTML = "<h1>Thank you Marko</h1>";
@@ -39,3 +49,9 @@ closeBtn.addEventListener("click", function () {
             resultElement.textContent = `${poundsAmount} pounds is equal to ${eurosAmount.toFixed(2)} euros.`;
            
         });
+
+//task 5
+ function move() {
+    let box = document.getElementById('blue-box');
+    box.style = "top: 100px; left: 400px;";
+};
